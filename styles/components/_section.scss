@@ -1,0 +1,42 @@
+section {
+    --backgroundColor: #ffffff;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position:relative;
+    margin-bottom: var(--sectionMarginBottom);
+
+    .sectionBackgroundMask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        z-index: -1;
+
+        .sectionBackground {
+            position: relative;
+            background-color: var(--backgroundColor);
+            background-image: var(--backgroundImage);
+            background-size: var(--backgroundSize);
+            background-position: var(--backgroundPosition);
+            background-repeat: var(--backgroundRepeat);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+    }
+
+    .sectionContainer {
+        width: var(--siteWidth);
+        margin: 0 auto;
+        z-index: 1;
+        padding: 65px 0;
+    }
+
+    background: transparent !important;
+}

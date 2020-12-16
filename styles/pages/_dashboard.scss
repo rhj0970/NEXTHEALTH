@@ -1,0 +1,267 @@
+#login, #register, #reset {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+
+    #formContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 72px 0;
+
+        #authForm {
+            width: 400px;
+
+            #authLogo {
+                display: block;
+                text-align: center;
+                height: 52px;
+                margin: 0 auto;
+                margin-bottom: 32px;
+        
+                img {
+                    height: 100%;
+                }
+            }
+
+            .mediumTitle {
+                margin-bottom: 12px;
+            }
+
+            .mediumParagraph {
+                color: #666666;
+                font-weight: 300;
+                margin-bottom: 32px;
+            }
+        
+            .authFieldLabel {
+                margin-bottom: 5px;
+                display: block;
+                font-size: 14px;
+                font-weight: 400;
+                color: #666666;
+            }
+
+            .authSelect {
+                margin-bottom: 18px;
+
+                .authSelect__control {
+                    height: 40px;
+                    border-radius: 4px;
+                    border: 1px solid var(--fieldBorderColor);
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #000000;
+                    font-family: 'Mulish';
+                    padding: 0 14px;
+                }
+
+                .authSelect__single-value {
+                    color: #000000;
+                }
+
+                .authSelect__placeholder {
+                    font-weight: 300;
+                }
+
+                .authSelect__value-container {
+                    padding: 0;
+                }
+
+                .authSelect__option {
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                .authSelect__menu {
+                    margin-top: 2px;
+                }
+
+                .authSelect__control--is-focused {
+                    box-shadow: none;
+                }
+
+                .authSelect__indicator {
+                    padding-right: 0;
+                }
+            }
+        
+            .authField {
+                font-size: 14px;
+                font-weight: 400;  
+                width: 100%;
+                height: 40px;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid var(--fieldBorderColor);
+                margin-bottom: 18px;
+                padding: 0 14px;
+                color: #000000;
+            
+                &:invalid {
+                    box-shadow: none;
+                }
+            
+                &:disabled {
+                    background: transparent;
+                }
+            }
+
+            .checkbox {
+                margin-bottom: 24px;
+
+                input {
+                    margin: 0 !important;
+                }
+            }
+
+            .authButton {
+                margin-bottom: 32px;
+                display: flex;
+                align-items: center;
+
+                .spinner {
+                    height: 16px;
+                    margin-left: 16px;
+                    color: #666666;
+                }
+            }
+
+            .authQuestion {
+                font-size: 16px;
+                margin-bottom: 3px;
+
+                .accent {
+                    font-weight: 600;
+                }
+            }
+
+            .googlePrompt {
+                margin-left: auto;
+                box-shadow: none !important;
+            }
+
+            .authNotice {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            #passwordLabel {
+                display: flex !important;
+                align-items: center;
+        
+                .text {
+                    flex-grow: 1;
+                }
+        
+                .strengthMeter {
+                    display: flex;
+        
+                    .strength {
+                        margin-right: 5px;
+                        flex-grow: 0;
+                        border-radius: 50%;
+                        width: 6px;
+                        height: 6px;
+                        background: #e3e8ee;
+                        transition: .6s all ease;
+        
+                        &.strength1 {
+                            background: #cd3d64;
+                        }
+        
+                        &.strength2 {
+                            background: #e56f4a;
+                        }
+        
+                        &.strength3, &.strength4 {
+                            background: #33c27f;
+                        }
+                    }
+                }
+            }    
+        
+            .ReactPasswordStrength-strength-bar, .ReactPasswordStrength-strength-desc {
+                display: none;
+            }
+            
+            #password {
+                position: relative;
+        
+                input {
+                    padding-right: 32px;
+                }
+        
+                .viewToggle {
+                    fill: #a3acb9;
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                    transition: .2s all ease;
+                    cursor: pointer;
+        
+                    &:hover {
+                        fill: #3c4257;
+                    }
+                }
+            }
+
+            @keyframes shake {
+                0% { -webkit-transform: translate(30px); }
+                20% { -webkit-transform: translate(-30px); }
+                40% { -webkit-transform: translate(15px); }
+                60% { -webkit-transform: translate(-15px); }
+                80% { -webkit-transform: translate(8px); }
+                100% { -webkit-transform: translate(0px); }
+            }
+            
+            @-webkit-keyframes shake {
+                0% { -webkit-transform: translate(30px); }
+                20% { -webkit-transform: translate(-30px); }
+                40% { -webkit-transform: translate(15px); }
+                60% { -webkit-transform: translate(-15px); }
+                80% { -webkit-transform: translate(8px); }
+                100% { -webkit-transform: translate(0px); }
+            }
+            
+            @-moz-keyframes shake {
+                0% { -moz-transform: translate(30px); }
+                20% { -moz-transform: translate(-30px); }
+                40% { -moz-transform: translate(15px); }
+                60% { -moz-transform: translate(-15px); }
+                80% { -moz-transform: translate(8px); }
+                100% { -moz-transform: translate(0px); }
+            }
+            
+            @-o-keyframes shake {
+                0% { -o-transform: translate(30px); }
+                20% { -o-transform: translate(-30px); }
+                40% { -o-transform: translate(15px); }
+                60% { -o-transform: translate(-15px); }
+                80% { -o-transform: translate(8px); }
+                100% { -o-origin-transform: translate(0px); }
+            }
+            
+            &.formError {
+                animation: shake 0.4s 1 linear !important;
+                -webkit-animation: shake 0.4s 1 linear !important;
+                -moz-animation: shake 0.4s 1 linear !important;
+                -o-animation: shake 0.4s 1 linear !important;
+            }
+
+            .error {
+                display: flex;
+                margin: 24px 0;
+                color: #ed5f74;
+                font-size: 14px;
+            
+                .icon {
+                    fill: currentColor;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}

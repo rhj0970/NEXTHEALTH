@@ -1,0 +1,27 @@
+.siteHeader {
+    width: 100%;
+    height: var(--siteHeaderHeight);
+    background: var(--siteHeaderBackgroundColor);
+
+    .siteHeaderContainer {
+        width: var(--siteWidth);
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;    
+
+        .siteHeaderLogo {
+            display: block;
+            position: relative;
+            height: var(--siteHeaderLogoHeight);
+    
+            img {
+                height: 100%;
+            }
+        }
+
+        .siteHeaderItems {
+            margin-left: auto;
+        }
+    }
+}

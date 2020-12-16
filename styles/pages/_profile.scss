@@ -1,0 +1,120 @@
+#userProfile {
+    .userProfileHeader {
+        width: 100%;
+        position: relative;
+
+        .userProfileHeaderImage {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            z-index: 1;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 -450px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+
+        .userProfileHeaderContentContainer {
+            width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            z-index: 2;
+
+            .userProfilePicture {
+                border-radius: 50%;
+                height: 250px;
+                width: 250px;
+                margin-top: -75px;
+                z-index: 3;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+
+            .userProfileHeaderInformation {
+                display: flex;
+                flex-direction: column;
+                margin-left: 24px;
+                padding-top: 24px;
+
+                .userProfileName {
+                    font-size: 32px;
+                    font-weight: 800;
+                }
+
+                .userRole {
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+
+         
+            }
+        }
+        
+    }
+
+
+    .userTags {
+        margin-top: 10px;
+
+        .userTag {
+            display: inline-block;
+            padding: 5px 20px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            background: rgba($color: orange, $alpha: 0.1);
+            color: orangered;
+            font-size: 14px;
+            border-radius: 18px;
+        }
+    }
+
+    .userProfileSection {
+        width: 1100px;
+        margin: 0 auto;
+        padding: 64px 0;
+
+        .userProfileSectionTitle {
+            font-size: 32px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .userWorkouts {
+            display: flex;
+            flex-wrap: wrap;
+
+            .userWorkoutContainer {
+                flex-basis: calc(100% / 3);
+                flex-grow: 0;
+                padding: 24px;
+
+                .userWorkout {
+                    border-radius: 12px;
+                    background: #ffffff;
+                    width: 100%;
+                    padding: 30px;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+                    .workoutName {
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

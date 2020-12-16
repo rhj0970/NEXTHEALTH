@@ -1,0 +1,15 @@
+#home {
+    #hero {
+        .checkList{
+            margin-bottom: 32px;
+        }
+
+        .button {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: unset;
+            }
+        }
+    }
+}

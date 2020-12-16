@@ -1,0 +1,27 @@
+.checkList {
+    list-style: none;
+
+    .checkListItem {
+        margin-bottom: 16px;
+        display: flex;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .iconContainer {
+            width: 14px;
+            flex: 0 0 14px;
+            margin-right: 10px;
+        }
+
+        .checkListIcon {
+            stroke: var(--black);
+        }
+
+        .checkListText {
+            flex-grow: 1;
+            font-size: 17px;
+        }
+    }
+}
